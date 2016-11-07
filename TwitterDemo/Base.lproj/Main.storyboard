@@ -695,9 +695,7 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Voj-kM-Fyk">
-                                <frame key="frameInset" minY="278" width="320" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Voj-kM-Fyk">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-oE-wx7">
@@ -714,19 +712,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RE8-rT-tJz" secondAttribute="trailing" id="0K0-gb-XGs"/>
+                            <constraint firstItem="Voj-kM-Fyk" firstAttribute="leading" secondItem="R1e-Iw-nmN" secondAttribute="leading" id="1Rf-9Q-xXY"/>
                             <constraint firstItem="bgX-ul-flb" firstAttribute="leading" secondItem="dUV-Rv-Fpm" secondAttribute="trailing" constant="20" id="1yX-CF-B4E"/>
                             <constraint firstItem="RE8-rT-tJz" firstAttribute="leading" secondItem="R1e-Iw-nmN" secondAttribute="leading" id="2Kf-AD-0Yq"/>
                             <constraint firstItem="O4I-tV-EYF" firstAttribute="top" secondItem="SFa-bT-E2x" secondAttribute="bottom" constant="24" id="3Qw-ib-Qhb"/>
                             <constraint firstItem="SFa-bT-E2x" firstAttribute="leading" secondItem="R1e-Iw-nmN" secondAttribute="leadingMargin" id="4QZ-YN-bGj"/>
                             <constraint firstItem="gOE-oE-wx7" firstAttribute="leading" secondItem="mXR-Za-2o6" secondAttribute="trailing" constant="5" id="BGB-R3-Mef"/>
                             <constraint firstItem="RE8-rT-tJz" firstAttribute="top" secondItem="R1e-Iw-nmN" secondAttribute="top" id="BkL-92-Rp4"/>
+                            <constraint firstAttribute="trailing" secondItem="Voj-kM-Fyk" secondAttribute="trailing" id="G0Q-b7-jra"/>
                             <constraint firstItem="qTo-4F-Amb" firstAttribute="leading" secondItem="R1e-Iw-nmN" secondAttribute="leadingMargin" constant="5" id="SCy-YX-yTB"/>
                             <constraint firstItem="SFa-bT-E2x" firstAttribute="top" secondItem="mFg-ze-zYL" secondAttribute="bottom" constant="2.5" id="XDK-sW-Dmv"/>
+                            <constraint firstItem="oKk-2g-r1Z" firstAttribute="top" secondItem="Voj-kM-Fyk" secondAttribute="bottom" id="XpJ-2k-Yfi"/>
                             <constraint firstItem="mXR-Za-2o6" firstAttribute="leading" secondItem="Sun-ME-HHT" secondAttribute="trailing" constant="15" id="ZLj-qA-9eC"/>
                             <constraint firstItem="Sun-ME-HHT" firstAttribute="baseline" secondItem="dUV-Rv-Fpm" secondAttribute="baseline" id="adN-sG-NTh"/>
                             <constraint firstItem="mFg-ze-zYL" firstAttribute="leading" secondItem="R1e-Iw-nmN" secondAttribute="leading" constant="12" id="ei8-jV-aGe"/>
                             <constraint firstItem="mXR-Za-2o6" firstAttribute="baseline" secondItem="O4I-tV-EYF" secondAttribute="baseline" id="evc-rW-QDh"/>
                             <constraint firstItem="O4I-tV-EYF" firstAttribute="baseline" secondItem="dUV-Rv-Fpm" secondAttribute="baseline" id="g2D-JF-zyK"/>
+                            <constraint firstItem="Voj-kM-Fyk" firstAttribute="top" secondItem="mXR-Za-2o6" secondAttribute="bottom" constant="13" id="gzr-Ee-bY2"/>
                             <constraint firstItem="Sun-ME-HHT" firstAttribute="leading" secondItem="bgX-ul-flb" secondAttribute="trailing" constant="5" id="kmN-6P-bP4"/>
                             <constraint firstItem="O4I-tV-EYF" firstAttribute="leading" secondItem="R1e-Iw-nmN" secondAttribute="leadingMargin" id="pST-GK-zSi"/>
                             <constraint firstItem="gOE-oE-wx7" firstAttribute="baseline" secondItem="O4I-tV-EYF" secondAttribute="baseline" id="qJj-yL-taJ"/>
@@ -755,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lan-TA-EQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2544" y="1338"/>
+            <point key="canvasLocation" x="2542.5" y="1337.323943661972"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I0f-nJ-slg">
@@ -816,9 +818,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" retweet" width="16" height="10"/>
-        <image name="favorite" width="11" height="11"/>
-        <image name="reply" width="13" height="9"/>
+        <image name=" retweet" width="100" height="100"/>
+        <image name="favorite" width="100" height="100"/>
+        <image name="reply" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eMT-SL-p3p"/>
